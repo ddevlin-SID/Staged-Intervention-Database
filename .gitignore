@@ -1,0 +1,6 @@
+# Data files - don't publish
+*.csv
+*.json
+demo-database.json
+AAA_Subjects_Upload_Template.csv
+school_roll_template.csv

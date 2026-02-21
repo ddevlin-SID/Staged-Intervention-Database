@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staged Intervention Database | Learner Profile &amp; ASN Recording Tool for Schools</title>
+    <meta name="description" content="Record additional support needs and generate customisable learner profiles for your school. A powerful enhancement tool for managing staged interventions and assessment arrangements.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #0c4a6e 0%, #0369a1 50%, #0ea5e9 100%); }
+        .feature-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .feature-card { transition: all 0.3s ease; }
+        .si-level { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; font-weight: 700; font-size: 14px; }
+    </style>
+</head>
+<body class="bg-sky-50 text-slate-800">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center space-x-3">
+                    <img src="logo-short.png" alt="SID Logo" class="h-10 w-auto">
+                    <span class="font-bold text-xl text-slate-800">Staged Intervention Database</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-slate-600 hover:text-sky-600 transition">Features</a>
+                    <a href="#screenshots" class="text-slate-600 hover:text-sky-600 transition">Screenshots</a>
+                    <a href="#licensing" class="text-slate-600 hover:text-sky-600 transition">Licensing</a>
+                    <a href="#about" class="text-slate-600 hover:text-sky-600 transition">About</a>
+                    <a href="#contact" class="bg-sky-600 text-white px-5 py-2 rounded-lg hover:bg-sky-700 transition">Enquire</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg pt-32 pb-20 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <img src="logo-short.png" alt="Staged Intervention Database" class="h-32 md:h-40 w-auto mx-auto mb-8">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight">
+                Record. Profile. Support.
+            </h1>
+            <p class="text-xl md:text-2xl text-sky-100 mb-10 max-w-3xl mx-auto">
+                A simple, powerful database for recording additional support needs and sharing learner profiles with staff. Not a replacement for your MIS, but an enhancement that works alongside it.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#licensing" class="bg-white text-sky-700 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-sky-50 transition shadow-lg">
+                    View Licensing
+                </a>
+                <a href="#features" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/10 transition">
+                    See Features
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-slate-500 text-sm uppercase tracking-wider mb-6">Works Alongside Your Existing Systems</p>
+            <p class="text-slate-600 text-lg">Not a replacement for SEEMiS or other MIS platforms. A dedicated tool for ASN recording and staff communication.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 px-4 bg-sky-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Powerful Features, Fully Customisable</h2>
+                <p class="text-xl text-slate-600 max-w-2xl mx-auto">Record additional support needs and generate detailed learner profiles tailored to your school.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card bg-white rounded-2xl p-8 shadow-sm border border-sky-100">
+                    <div class="w-14 h-14 rounded-xl bg-sky-100 flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-slate-800">ASN Recording &amp; Staged Interventions</h3>
+                    <p class="text-slate-600">Record additional support needs and track learners across all four staged intervention levels with clear visual indicators.</p>
+                    <div class="mt-4 flex gap-2">
+                        <span class="si-level bg-emerald-100 text-emerald-700">1</span>
+                        <span class="si-level bg-amber-100 text-amber-700">2</span>
+                        <span class="si-level bg-orange-100 text-orange-700">3</span>
+                        <span class="si-level bg-rose-100 text-rose-700">4</span>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card bg-white rounded-2xl p-8 shadow-sm border border-sky-100">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-100 flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-slate-800">Assessment Arrangements (AAA)</h3>
+                    <p class="text-slate-600">Manage exam accommodations by subject, level, and teacher. Bulk update arrangements across multiple students efficiently.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card bg-white rounded-2xl p-8 shadow-sm border border-sky-100">
+                    <div class="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-slate-800">Customisable Learner Profiles</h3>
+                    <p class="text-slate-600">Generate detailed learner profiles based on recorded needs. Fully customisable to match your school's requirements and terminology.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card bg-white rounded-2xl p-8 shadow-sm border border-sky-100">
+                    <div class="w-14 h-14 rounded-xl bg-teal-100 flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-slate-800">ASN Support Hub</h3>
+                    <p class="text-slate-600">Built-in resources and guidance for Additional Support Needs, providing staff with instant access to best practices.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card bg-white rounded-2xl p-8 shadow-sm border border-sky-100">
+                    <div class="w-14 h-14 rounded-xl bg-sky-100 flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-slate-800">Statistics &amp; Reporting</h3>
+                    <p class="text-slate-600">Generate insights with built-in statistics. Export data to Excel for further analysis and reporting to stakeholders.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card bg-white rounded-2xl p-8 shadow-sm border border-sky-100">
+                    <div class="w-14 h-14 rounded-xl bg-slate-700 flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-slate-800">Role-Based Access</h3>
+                    <p class="text-slate-600">Secure access controls with Admin, Teacher, and Manager roles. Ensure the right people see the right information.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-4">How It Works</h2>
+                <p class="text-xl text-slate-600 max-w-2xl mx-auto">Get started quickly with a system designed for busy educators.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 rounded-full gradient-bg flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white font-bold text-2xl">1</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-slate-800">Import Your Data</h3>
+                    <p class="text-slate-600">Quickly import existing student data or start fresh. The system adapts to your school's needs.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 rounded-full gradient-bg flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white font-bold text-2xl">2</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-slate-800">Configure & Customise</h3>
+                    <p class="text-slate-600">Set up user accounts, define access levels, and customise fields to match your processes.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 rounded-full gradient-bg flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white font-bold text-2xl">3</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-slate-800">Support Your Students</h3>
+                    <p class="text-slate-600">Track interventions, manage arrangements, and ensure every student gets the support they need.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Gallery Section -->
+    <section id="screenshots" class="py-20 px-4 bg-sky-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-4">See It In Action</h2>
+                <p class="text-xl text-slate-600 max-w-2xl mx-auto">Explore the interface with real examples using demonstration data.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- ASN Table -->
+                <div class="bg-white rounded-xl shadow-sm border border-sky-100 overflow-hidden group cursor-pointer" onclick="openLightbox(this.querySelector('img').src, this.querySelector('h4').textContent)">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="ASN%20Table.png" alt="ASN Table View" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-semibold text-slate-800">ASN Table Overview</h4>
+                        <p class="text-sm text-slate-600">Main dashboard showing all pupils with support needs, staged intervention levels, and quick-access information.</p>
+                    </div>
+                </div>
+                
+                <!-- Pupil Profile Visual -->
+                <div class="bg-white rounded-xl shadow-sm border border-sky-100 overflow-hidden group cursor-pointer" onclick="openLightbox(this.querySelector('img').src, this.querySelector('h4').textContent)">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="Pupil%20Profile%20visual.png" alt="Pupil Profile Visual" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-semibold text-slate-800">Visual Pupil Profile</h4>
+                        <p class="text-sm text-slate-600">Comprehensive learner profile with strengths, in-class supports, wellbeing targets, and key information at a glance.</p>
+                    </div>
+                </div>
+                
+                <!-- Health Care Plan -->
+                <div class="bg-white rounded-xl shadow-sm border border-sky-100 overflow-hidden group cursor-pointer" onclick="openLightbox(this.querySelector('img').src, this.querySelector('h4').textContent)">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="Health%20Care%20Plan.png" alt="Health Care Plan" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-semibold text-slate-800">Health Care Plans</h4>
+                        <p class="text-sm text-slate-600">Detailed health plans including conditions, emergency procedures, medication, daily care, and staff notes.</p>
+                    </div>
+                </div>
+                
+                <!-- Suggested Exam Accommodations -->
+                <div class="bg-white rounded-xl shadow-sm border border-sky-100 overflow-hidden group cursor-pointer" onclick="openLightbox(this.querySelector('img').src, this.querySelector('h4').textContent)">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="Suggested%20Exam%20Accommodations.png" alt="Suggested Exam Accommodations" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-semibold text-slate-800">Exam Accommodations</h4>
+                        <p class="text-sm text-slate-600">Suggested AAA arrangements based on recorded support needs, ready for verification and approval.</p>
+                    </div>
+                </div>
+                
+                <!-- AAA Hub Table -->
+                <div class="bg-white rounded-xl shadow-sm border border-sky-100 overflow-hidden group cursor-pointer" onclick="openLightbox(this.querySelector('img').src, this.querySelector('h4').textContent)">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="AAA%20Hub%20Table.png" alt="AAA Hub Table" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-semibold text-slate-800">AAA Management Hub</h4>
+                        <p class="text-sm text-slate-600">Central hub for managing all assessment arrangements across year groups, with bulk actions and filtering.</p>
+                    </div>
+                </div>
+                
+                <!-- AAA Verification Screen -->
+                <div class="bg-white rounded-xl shadow-sm border border-sky-100 overflow-hidden group cursor-pointer" onclick="openLightbox(this.querySelector('img').src, this.querySelector('h4').textContent)">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="AAA%20Verification%20Screen.png" alt="AAA Verification Screen" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-semibold text-slate-800">AAA Verification</h4>
+                        <p class="text-sm text-slate-600">Verification workflow for exam arrangements, ensuring all accommodations are properly documented and approved.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Printable Profiles Row -->
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold text-slate-800 mb-6 text-center">Printable Learner Profiles</h3>
+                <p class="text-slate-600 text-center mb-8 max-w-2xl mx-auto">Generate professional, printable profiles to share with staff, parents, or external agencies.</p>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-xl shadow-sm border border-sky-100 overflow-hidden group cursor-pointer" onclick="openLightbox(this.querySelector('img').src, this.querySelector('h4').textContent)">
+                        <div class="aspect-[3/4] overflow-hidden">
+                            <img src="Pupil%20Profile%20printed.png" alt="Printed Profile Page 1" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-semibold text-slate-800">Profile Overview</h4>
+                            <p class="text-sm text-slate-600">Key information and support summary.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-sm border border-sky-100 overflow-hidden group cursor-pointer" onclick="openLightbox(this.querySelector('img').src, this.querySelector('h4').textContent)">
+                        <div class="aspect-[3/4] overflow-hidden">
+                            <img src="Pupil%20Profile%20printed%202.png" alt="Printed Profile Page 2" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-semibold text-slate-800">In-Class Supports</h4>
+                            <p class="text-sm text-slate-600">Detailed strategies and accommodations.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-sm border border-sky-100 overflow-hidden group cursor-pointer" onclick="openLightbox(this.querySelector('img').src, this.querySelector('h4').textContent)">
+                        <div class="aspect-[3/4] overflow-hidden">
+                            <img src="Pupil%20Profile%20printed%203.png" alt="Printed Profile Page 3" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-semibold text-slate-800">Health & Targets</h4>
+                            <p class="text-sm text-slate-600">Health plan and wellbeing targets.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 bg-black/90 z-[100] hidden items-center justify-center p-4" onclick="closeLightbox()">
+        <button class="absolute top-4 right-4 text-white hover:text-sky-400 transition" onclick="closeLightbox()">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+        <div class="max-w-6xl max-h-[90vh] overflow-auto" onclick="event.stopPropagation()">
+            <img id="lightbox-img" src="" alt="" class="max-w-full h-auto rounded-lg shadow-2xl">
+            <p id="lightbox-caption" class="text-white text-center mt-4 text-lg font-semibold"></p>
+        </div>
+    </div>
+
+    <script>
+        function openLightbox(src, caption) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox-caption').textContent = caption;
+            document.getElementById('lightbox').classList.remove('hidden');
+            document.getElementById('lightbox').classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.add('hidden');
+            document.getElementById('lightbox').classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6">Built by Educators,<br>for Educators</h2>
+                    <p class="text-xl text-slate-600 mb-8">
+                        The Staged Intervention Database was created by a teacher who understood the challenges of managing student support documentation. It's designed to save time and ensure nothing falls through the cracks.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-sky-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-slate-700"><strong>Save Hours Each Week</strong> - no more spreadsheets or paper files</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-sky-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-slate-700"><strong>Stay Compliant</strong> - proper documentation for inspections</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-sky-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-slate-700"><strong>Instant Access</strong> - find any student's information in seconds</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-sky-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-slate-700"><strong>Works Offline</strong> - no internet required after setup</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-br from-sky-600 to-cyan-500 rounded-2xl p-8 text-white">
+                    <h3 class="text-2xl font-bold mb-6">"At a Glance" Feature</h3>
+                    <p class="text-sky-100 mb-6">
+                        Instantly see critical information about any student: their support level, key arrangements, medical alerts, and emergency contacts, all on one screen.
+                    </p>
+                    <div class="bg-white/10 rounded-xl p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="si-level bg-orange-400 text-white">3</span>
+                            <span class="font-semibold">Stage 3 Intervention</span>
+                        </div>
+                        <div class="text-sm text-sky-100 space-y-2">
+                            <p>AAA: Extra time, Reader, Scribe</p>
+                            <p>Medical: Allergy alert active</p>
+                            <p>Last review: 14 days ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Licensing Section -->
+    <section id="licensing" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Licensing</h2>
+                <p class="text-xl text-slate-600 max-w-2xl mx-auto">A straightforward source code license for educational organisations.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-sky-50 rounded-2xl p-8 border border-sky-200">
+                    <h3 class="text-2xl font-bold text-slate-800 mb-6">What You Get</h3>
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-sky-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <strong class="text-slate-800">Complete Source Code</strong>
+                                <p class="text-slate-600 text-sm">Full, unobfuscated HTML/CSS/JS delivered as-is</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-sky-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <strong class="text-slate-800">Integration Rights</strong>
+                                <p class="text-slate-600 text-sm">Modify and integrate into your existing systems</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-sky-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <strong class="text-slate-800">Developer Sub-Licensing</strong>
+                                <p class="text-slate-600 text-sm">License your developers to work on the code</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-sky-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <strong class="text-slate-800">One-Time Purchase</strong>
+                                <p class="text-slate-600 text-sm">No subscriptions, no ongoing fees</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold text-slate-800 mb-6">License Terms</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-slate-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                            <div>
+                                <strong class="text-slate-800">No Resale</strong>
+                                <p class="text-slate-600 text-sm">You may not sell or commercially redistribute the software</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-slate-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                            <div>
+                                <strong class="text-slate-800">No Redistribution</strong>
+                                <p class="text-slate-600 text-sm">Source code remains internal to your organisation</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-sky-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <strong class="text-slate-800">Full Flexibility</strong>
+                                <p class="text-slate-600 text-sm">Your team can customise and deploy on your terms</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the Creator Section -->
+    <section id="about" class="py-20 px-4 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-4">About the Creator</h2>
+                <p class="text-xl text-slate-600">Built by someone on the front line who understands the daily challenges.</p>
+            </div>
+            
+            <div class="bg-gradient-to-br from-sky-50 to-cyan-50 rounded-2xl p-8 md:p-12 border border-sky-100">
+                <div class="prose prose-lg max-w-none text-slate-700">
+                    <p class="text-lg leading-relaxed mb-6">
+                        <strong class="text-slate-800">Darren Devlin</strong> is a Principal Teacher of Pastoral Care at a busy mainstream secondary school in Glasgow, Scotland. With over a decade in education since 2014, he manages a house group and maintains a full teaching timetable, balancing classroom responsibilities with the demands of supporting some of the most complex learners in the school.
+                    </p>
+                    
+                    <p class="text-lg leading-relaxed mb-6">
+                        The Staged Intervention Database was born from real frustration with systems that simply weren't fit for purpose. Clunky spreadsheets that only one person could edit at a time. Staff having to phone through just to check who had a toilet pass. Information scattered, outdated, and difficult to access when it mattered most. As someone dealing with these inefficiencies every single day, Darren knew there had to be a better way.
+                    </p>
+                    
+                    <p class="text-lg leading-relaxed mb-6">
+                        What started as a passion project to solve his own school's challenges has evolved over more than a year of development. Learning, iterating, and refining based on real-world experience. Early attempts using spreadsheets proved too limited, leading to the powerful, purpose-built solution that exists today. The database is now expanding across the largest local authority in Scotland, helping schools deliver better support to their learners.
+                    </p>
+                    
+                    <p class="text-lg leading-relaxed">
+                        Darren's vision is simple: give every teacher rich, real-time information about the pupils in front of them. Help Pupil Support staff and SLT update and share information quickly, efficiently and thoroughly. Make exam verification through the AAA Hub seamless. And ultimately, ensure that no learner falls through the cracks because information wasn't accessible when it was needed.
+                    </p>
+                </div>
+                
+                <div class="mt-8 pt-8 border-t border-sky-200">
+                    <p class="text-slate-600 italic text-center">
+                        "This didn't come out of nowhere. It was built over years of experience, months of development, and a genuine understanding of what schools actually need."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-20 px-4 gradient-bg">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Interested in Licensing?</h2>
+            <p class="text-xl text-sky-100 mb-10">
+                Get in touch to discuss licensing for your organisation.
+            </p>
+            <div class="bg-white rounded-2xl p-8 shadow-xl">
+                <form class="space-y-4">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500">
+                        <input type="text" placeholder="Organisation Name" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500">
+                    </div>
+                    <input type="email" placeholder="Email Address" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500">
+                    <textarea placeholder="Tell us about your organisation and intended use..." rows="4" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-500"></textarea>
+                    <button type="submit" class="w-full bg-sky-600 text-white py-4 rounded-lg font-semibold text-lg hover:bg-sky-700 transition">
+                        Enquire About Licensing
+                    </button>
+                </form>
+                <p class="text-slate-500 text-sm mt-4">We'll respond within 48 hours with licensing information.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-300 py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="logo-short.png" alt="SID Logo" class="h-10 w-auto">
+                        <span class="font-bold text-xl text-white">SID</span>
+                    </div>
+                    <p class="text-slate-300">Staged Intervention Database and Support Hub</p>
+                    <p class="text-slate-400 text-sm mt-2">A database for recording ASN and sharing information with staff</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="hover:text-sky-400 transition">Features</a></li>
+                        <li><a href="#licensing" class="hover:text-sky-400 transition">Licensing</a></li>
+                        <li><a href="#about" class="hover:text-sky-400 transition">About</a></li>
+                        <li><a href="#contact" class="hover:text-sky-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Licensing</h4>
+                    <p>Created by Darren Devlin</p>
+                    <p class="mt-2">Source code licenses available for educational organisations</p>
+                </div>
+            </div>
+            <div class="border-t border-slate-700 pt-8 text-center">
+                <p>&copy; 2026 Staged Intervention Database. All Rights Reserved.</p>
+                <p class="text-sm mt-2">Created by Darren Devlin</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
