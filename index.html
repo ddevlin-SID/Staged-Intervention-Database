@@ -297,7 +297,7 @@
                 </div>
                 
                 <!-- Printable Profile -->
-                <div class="bg-white rounded-xl shadow-sm border border-sky-100 overflow-hidden group cursor-pointer" onclick="openLightbox(this.querySelector('img').src, this.querySelector('h4').textContent)">
+                <div class="bg-white rounded-xl shadow-sm border border-sky-100 overflow-hidden group cursor-pointer" onclick="openProfileDocument()">
                     <div class="aspect-video overflow-hidden">
                         <img src="Pupil%20Profile%20printed.png" alt="Printable Profile" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-300">
                     </div>
@@ -312,14 +312,24 @@
 
     <!-- Lightbox Modal -->
     <div id="lightbox" class="fixed inset-0 bg-black/90 z-[100] hidden items-center justify-center p-4" onclick="closeLightbox()">
-        <button class="absolute top-4 right-4 text-white hover:text-sky-400 transition" onclick="closeLightbox()">
+        <button class="absolute top-4 right-4 text-white hover:text-sky-400 transition z-10" onclick="closeLightbox()">
             <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
             </svg>
         </button>
-        <div class="max-w-6xl max-h-[90vh] overflow-auto" onclick="event.stopPropagation()">
+        <!-- Single image view -->
+        <div id="lightbox-single" class="max-w-6xl max-h-[90vh] overflow-auto" onclick="event.stopPropagation()">
             <img id="lightbox-img" src="" alt="" class="max-w-full h-auto rounded-lg shadow-2xl">
             <p id="lightbox-caption" class="text-white text-center mt-4 text-lg font-semibold"></p>
+        </div>
+        <!-- Multi-page document view -->
+        <div id="lightbox-document" class="hidden max-w-2xl w-full max-h-[90vh] overflow-auto bg-slate-200 rounded-lg shadow-2xl" onclick="event.stopPropagation()">
+            <p class="text-slate-600 text-center py-3 bg-white sticky top-0 font-semibold border-b">Printable Learner Profile (scroll to view all pages)</p>
+            <div class="p-4 space-y-4">
+                <img src="Pupil%20Profile%20printed.png" alt="Profile Page 1" class="w-full h-auto rounded shadow">
+                <img src="Pupil%20Profile%20printed%202.png" alt="Profile Page 2" class="w-full h-auto rounded shadow">
+                <img src="Pupil%20Profile%20printed%203.png" alt="Profile Page 3" class="w-full h-auto rounded shadow">
+            </div>
         </div>
     </div>
 
@@ -327,6 +337,15 @@
         function openLightbox(src, caption) {
             document.getElementById('lightbox-img').src = src;
             document.getElementById('lightbox-caption').textContent = caption;
+            document.getElementById('lightbox-single').classList.remove('hidden');
+            document.getElementById('lightbox-document').classList.add('hidden');
+            document.getElementById('lightbox').classList.remove('hidden');
+            document.getElementById('lightbox').classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+        function openProfileDocument() {
+            document.getElementById('lightbox-single').classList.add('hidden');
+            document.getElementById('lightbox-document').classList.remove('hidden');
             document.getElementById('lightbox').classList.remove('hidden');
             document.getElementById('lightbox').classList.add('flex');
             document.body.style.overflow = 'hidden';
