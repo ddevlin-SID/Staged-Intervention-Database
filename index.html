@@ -23,8 +23,10 @@
             <div class="flex justify-between h-16 items-center">
                 <div class="flex items-center space-x-3">
                     <img src="logo-short-transparent.png" alt="SID Logo" class="h-10 w-auto">
-                    <span class="font-bold text-xl text-slate-800">Staged Intervention Database</span>
+                    <span class="font-bold text-xl text-slate-800 hidden sm:inline">Staged Intervention Database</span>
+                    <span class="font-bold text-lg text-slate-800 sm:hidden">SID</span>
                 </div>
+                <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#features" class="text-slate-600 hover:text-sky-600 transition">Features</a>
                     <a href="#screenshots" class="text-slate-600 hover:text-sky-600 transition">Screenshots</a>
@@ -32,9 +34,46 @@
                     <a href="#about" class="text-slate-600 hover:text-sky-600 transition">About</a>
                     <a href="#contact" class="bg-sky-600 text-white px-5 py-2 rounded-lg hover:bg-sky-700 transition">Enquire</a>
                 </div>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-slate-100 transition" onclick="toggleMobileMenu()">
+                    <svg id="menu-icon-open" class="w-6 h-6 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    <svg id="menu-icon-close" class="w-6 h-6 text-slate-700 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-200 shadow-lg">
+            <div class="px-4 py-4 space-y-3">
+                <a href="#features" onclick="closeMobileMenu()" class="block px-4 py-3 text-slate-700 hover:bg-sky-50 hover:text-sky-600 rounded-lg transition">Features</a>
+                <a href="#screenshots" onclick="closeMobileMenu()" class="block px-4 py-3 text-slate-700 hover:bg-sky-50 hover:text-sky-600 rounded-lg transition">Screenshots</a>
+                <a href="#licensing" onclick="closeMobileMenu()" class="block px-4 py-3 text-slate-700 hover:bg-sky-50 hover:text-sky-600 rounded-lg transition">Licensing</a>
+                <a href="#about" onclick="closeMobileMenu()" class="block px-4 py-3 text-slate-700 hover:bg-sky-50 hover:text-sky-600 rounded-lg transition">About</a>
+                <a href="#contact" onclick="closeMobileMenu()" class="block px-4 py-3 bg-sky-600 text-white text-center rounded-lg hover:bg-sky-700 transition">Enquire</a>
             </div>
         </div>
     </nav>
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const iconOpen = document.getElementById('menu-icon-open');
+            const iconClose = document.getElementById('menu-icon-close');
+            menu.classList.toggle('hidden');
+            iconOpen.classList.toggle('hidden');
+            iconClose.classList.toggle('hidden');
+        }
+        function closeMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const iconOpen = document.getElementById('menu-icon-open');
+            const iconClose = document.getElementById('menu-icon-close');
+            menu.classList.add('hidden');
+            iconOpen.classList.remove('hidden');
+            iconClose.classList.add('hidden');
+        }
+    </script>
 
     <!-- Hero Section -->
     <section class="gradient-bg pt-32 pb-20 px-4">
