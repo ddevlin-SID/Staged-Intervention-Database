@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASN Resources | Staged Intervention Database</title>
+    <meta name="description" content="Practical information and resources on additional support needs for Scottish schools. Autism, dyslexia, anxiety, care experience, and more.">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%); }
+    </style>
+</head>
+<body class="bg-slate-50">
+    <!-- Navigation -->
+    <nav class="bg-white/95 backdrop-blur-sm border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="sid-logo.png" alt="SID Logo" class="h-10">
+                    <span class="font-bold text-xl text-slate-800">Staged Intervention Database</span>
+                </a>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="index.html#features" class="text-slate-600 hover:text-sky-600 transition">Features</a>
+                    <a href="index.html#screenshots" class="text-slate-600 hover:text-sky-600 transition">Screenshots</a>
+                    <a href="staged-intervention.html" class="text-slate-600 hover:text-sky-600 transition">What is Staged Intervention?</a>
+                    <a href="asn-resources.html" class="text-sky-600 font-medium">ASN Resources</a>
+                    <a href="index.html#contact" class="gradient-bg text-white px-5 py-2 rounded-full font-medium hover:opacity-90 transition">Get in Touch</a>
+                </div>
+                <button class="md:hidden text-slate-600" onclick="toggleMobileMenu()">
+                    <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-slate-200 pt-4">
+                <div class="flex flex-col gap-4">
+                    <a href="index.html#features" class="text-slate-600 hover:text-sky-600 transition" onclick="closeMobileMenu()">Features</a>
+                    <a href="index.html#screenshots" class="text-slate-600 hover:text-sky-600 transition" onclick="closeMobileMenu()">Screenshots</a>
+                    <a href="staged-intervention.html" class="text-slate-600 hover:text-sky-600 transition" onclick="closeMobileMenu()">What is Staged Intervention?</a>
+                    <a href="asn-resources.html" class="text-sky-600 font-medium" onclick="closeMobileMenu()">ASN Resources</a>
+                    <a href="index.html#contact" class="gradient-bg text-white px-5 py-2 rounded-full font-medium hover:opacity-90 transition text-center" onclick="closeMobileMenu()">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        function toggleMobileMenu() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+            document.getElementById('menu-icon').classList.toggle('hidden');
+            document.getElementById('close-icon').classList.toggle('hidden');
+        }
+        function closeMobileMenu() {
+            document.getElementById('mobile-menu').classList.add('hidden');
+            document.getElementById('menu-icon').classList.remove('hidden');
+            document.getElementById('close-icon').classList.add('hidden');
+        }
+    </script>
+
+    <!-- Hero -->
+    <section class="py-12 px-4 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-slate-800 mb-6">ASN Resources</h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+                Practical information and resources to support learners with additional support needs in Scottish schools. This page is for information only. Always follow your school's policies and seek specialist advice when needed.
+            </p>
+        </div>
+    </section>
+
+    <!-- Accordion -->
+    <section class="py-12 px-4 pb-24">
+        <div class="max-w-4xl mx-auto space-y-2">
+
+            <!-- Autism Spectrum Condition -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                <button class="asn-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-slate-50 transition" data-target="autism">
+                    <span class="font-semibold text-slate-800">Autism Spectrum Condition</span>
+                    <svg class="asn-icon w-5 h-5 text-slate-500 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div id="autism" class="asn-content hidden px-6 pb-6 border-t border-slate-100">
+                    <div class="pt-4 space-y-4 text-slate-600">
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Overview</h4>
+                            <p>Autism is a lifelong neurodevelopmental difference that affects how a person communicates, interacts, and processes information. Every autistic learner is different. Some may need minimal support; others may need significant adjustments. Strengths can include attention to detail, logical thinking, and deep focus on areas of interest.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">In the classroom</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>May struggle with change, transitions, or unexpected events</li>
+                                <li>May find busy or noisy environments overwhelming (sensory overload)</li>
+                                <li>May have difficulty reading social cues or understanding unwritten rules</li>
+                                <li>May prefer clear, literal instructions over implied or abstract ones</li>
+                                <li>May have intense interests they focus on</li>
+                                <li>May use repetitive movements (stimming) to regulate</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Suggested strategies</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Use visual timetables and prepare for transitions in advance</li>
+                                <li>Give clear, explicit instructions; avoid sarcasm or idioms</li>
+                                <li>Consider seating (away from distractions, near a calm area)</li>
+                                <li>Allow movement breaks or quiet time when needed</li>
+                                <li>Be predictable and consistent with routines</li>
+                                <li>Allow use of fidgets or stimming if it helps regulation</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Further reading and CPD</h4>
+                            <ul class="space-y-2">
+                                <li><a href="https://www.autism.org.uk/" target="_blank" rel="noopener" class="text-sky-600 hover:underline">National Autistic Society</a> – Advice, guidance, and resources</li>
+                                <li><a href="https://www.scottishautism.org/" target="_blank" rel="noopener" class="text-sky-600 hover:underline">Scottish Autism</a> – Scotland’s leading autism charity; advice and training</li>
+                                <li><a href="https://education.gov.scot/resources/neurodiversity/the-autism-toolbox/" target="_blank" rel="noopener" class="text-sky-600 hover:underline">The Autism Toolbox (Education Scotland)</a> – Practical support for inclusion in mainstream schools</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dyslexia -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                <button class="asn-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-slate-50 transition" data-target="dyslexia">
+                    <span class="font-semibold text-slate-800">Dyslexia</span>
+                    <svg class="asn-icon w-5 h-5 text-slate-500 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div id="dyslexia" class="asn-content hidden px-6 pb-6 border-t border-slate-100">
+                    <div class="pt-4 space-y-4 text-slate-600">
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Overview</h4>
+                            <p>Dyslexia is a specific learning difficulty that mainly affects literacy skills (reading, writing, spelling). It is not linked to intelligence. Learners with dyslexia may take longer to process written text, mix up letter order, or struggle with phonics. Many have strengths in verbal reasoning, creativity, or problem-solving.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">In the classroom</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Slow or laboured reading; may avoid reading aloud</li>
+                                <li>Spelling difficulties; inconsistent spelling of the same word</li>
+                                <li>Struggle to take notes while listening</li>
+                                <li>May need more time to complete written tasks</li>
+                                <li>May find it hard to sequence or remember lists</li>
+                                <li>Can tire quickly when doing literacy-heavy work</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Suggested strategies</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Use dyslexia-friendly fonts, spacing, and background colours</li>
+                                <li>Provide printed notes or summaries instead of copying from the board</li>
+                                <li>Allow extra time for reading and writing tasks</li>
+                                <li>Use assistive technology (text-to-speech, speech-to-text)</li>
+                                <li>Offer alternatives to written assessments where appropriate</li>
+                                <li>Break instructions into small steps</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Further reading and CPD</h4>
+                            <ul class="space-y-2">
+                                <li><a href="https://addressingdyslexia.org/" target="_blank" rel="noopener" class="text-sky-600 hover:underline">Addressing Dyslexia Toolkit</a> – Free toolkit for identification, assessment, and support</li>
+                                <li><a href="https://www.gtcs.org.uk/accredited-professional-recognition-programmes/dyslexia-and-inclusive-practice-professional-recognition-programme" target="_blank" rel="noopener" class="text-sky-600 hover:underline">Dyslexia and Inclusive Practice (GTC Scotland)</a> – Professional Recognition programme</li>
+                                <li><a href="https://dyslexiascotland.org.uk/online-learning/" target="_blank" rel="noopener" class="text-sky-600 hover:underline">Dyslexia Scotland Online Learning</a> – Free modules for teachers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ADHD -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                <button class="asn-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-slate-50 transition" data-target="adhd">
+                    <span class="font-semibold text-slate-800">ADHD</span>
+                    <svg class="asn-icon w-5 h-5 text-slate-500 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div id="adhd" class="asn-content hidden px-6 pb-6 border-t border-slate-100">
+                    <div class="pt-4 space-y-4 text-slate-600">
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Overview</h4>
+                            <p>ADHD (Attention Deficit Hyperactivity Disorder) is a neurodevelopmental condition. Learners may have difficulty sustaining attention, struggle with impulse control, or show high levels of physical activity. Some have mainly inattentive presentation (ADD). ADHD is not a behaviour choice; it affects how the brain regulates attention and behaviour.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">In the classroom</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Difficulty focusing on tasks, especially sustained or less stimulating ones</li>
+                                <li>May fidget, move, or leave their seat</li>
+                                <li>May call out or interrupt; struggle to wait their turn</li>
+                                <li>Can lose or forget equipment, homework, and instructions</li>
+                                <li>May rush through work or miss steps</li>
+                                <li>Time perception can be inconsistent</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Suggested strategies</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Seat near the teacher, away from distractions; use positive peers as models</li>
+                                <li>Break tasks into small steps; one or two activities per page</li>
+                                <li>Use visual timetables and predictable routines</li>
+                                <li>Give clear, concise instructions; ask them to repeat back</li>
+                                <li>Allow movement breaks and alternate active and sitting tasks</li>
+                                <li>Use checklists and support organisation (desk, materials, homework)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Further reading and CPD</h4>
+                            <ul class="space-y-2">
+                                <li><a href="https://education.gov.scot/resources/neurodiversity/attention-deficit-hyperactivity-disorder-adhd/" target="_blank" rel="noopener" class="text-sky-600 hover:underline">ADHD (Education Scotland)</a> – Guidance for practitioners</li>
+                                <li><a href="https://www.attic.org.uk/adhd-in-the-classroom" target="_blank" rel="noopener" class="text-sky-600 hover:underline">ATTIC: ADHD in the Classroom</a> – Tips and tricks for school staff</li>
+                                <li><a href="https://enquire.org.uk/" target="_blank" rel="noopener" class="text-sky-600 hover:underline">Enquire</a> – Information on ASL rights and support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Anxiety & Mental Health -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                <button class="asn-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-slate-50 transition" data-target="anxiety">
+                    <span class="font-semibold text-slate-800">Anxiety & Mental Health</span>
+                    <svg class="asn-icon w-5 h-5 text-slate-500 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div id="anxiety" class="asn-content hidden px-6 pb-6 border-t border-slate-100">
+                    <div class="pt-4 space-y-4 text-slate-600">
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Overview</h4>
+                            <p>Anxiety is one of the most common mental health difficulties in children and young people. It can show up as worry, avoidance, physical symptoms (headaches, stomach aches), or difficulty concentrating. A nurturing, predictable environment and supportive relationships can help. Some learners may need specialist support from CAMHS or school-based counselling.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">In the classroom</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>May avoid certain situations (e.g. speaking in front of others, tests)</li>
+                                <li>Can appear withdrawn, irritable, or restless</li>
+                                <li>May seek constant reassurance or perfectionism</li>
+                                <li>Physical complaints (headaches, tummy aches) without clear cause</li>
+                                <li>Difficulty concentrating; may seem distracted by worries</li>
+                                <li>Absence or late arrival, especially around triggers</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Suggested strategies</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Create a calm, predictable environment with clear expectations</li>
+                                <li>Prepare for changes and transitions in advance</li>
+                                <li>Offer options (e.g. contributing in pairs before whole class)</li>
+                                <li>Normalise mistakes and model resilience</li>
+                                <li>Provide a safe space or trusted adult to go to when overwhelmed</li>
+                                <li>Know your school’s wellbeing and mental health pathways</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Further reading and CPD</h4>
+                            <ul class="space-y-2">
+                                <li><a href="https://www.digitallearningmap.nhs.scot/resources-a-to-z/let-s-introduce-anxiety-management-liam/" target="_blank" rel="noopener" class="text-sky-600 hover:underline">LIAM (NHS Education Scotland)</a> – CBT-informed anxiety intervention for CYP</li>
+                                <li><a href="https://www.gtcs.org.uk/registrant-resources/health-and-wellbeing-as-a-teacher" target="_blank" rel="noopener" class="text-sky-600 hover:underline">Health and Wellbeing (GTC Scotland)</a> – Resources for staff and learners</li>
+                                <li><a href="https://education.gov.scot/resources/positive-mental-wellbeing-resources-to-support-children-and-young-people/" target="_blank" rel="noopener" class="text-sky-600 hover:underline">Positive Mental Wellbeing (Education Scotland)</a> – Resources for CYP</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Care Experienced Children -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                <button class="asn-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-slate-50 transition" data-target="care">
+                    <span class="font-semibold text-slate-800">Care Experienced Children</span>
+                    <svg class="asn-icon w-5 h-5 text-slate-500 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div id="care" class="asn-content hidden px-6 pb-6 border-t border-slate-100">
+                    <div class="pt-4 space-y-4 text-slate-600">
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Overview</h4>
+                            <p>Care experienced children and young people are those who are or have been looked after (e.g. foster care, kinship care, residential care). Many have additional support needs. Looked after children are presumed to have ASN unless assessed otherwise. The Promise sets out how Scotland should support care experienced people. Relationships and stability in school are especially important.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">In the classroom</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>May have moved schools or homes multiple times</li>
+                                <li>Can find it hard to trust adults or form attachments</li>
+                                <li>May be distracted by home circumstances or hearings</li>
+                                <li>Attendance and punctuality may be affected</li>
+                                <li>May not want to draw attention to their situation</li>
+                                <li>Homework support from home may be limited</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Suggested strategies</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Use inclusive language (e.g. "parents or carers", "take home to be signed")</li>
+                                <li>Build trust through consistency and predictable relationships</li>
+                                <li>Listen to the child; involve them in decisions about support</li>
+                                <li>Know who the designated lead for care experienced learners is</li>
+                                <li>Be flexible with deadlines and homework when appropriate</li>
+                                <li>Never use acronyms like "LAC" to refer to a child</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Further reading and CPD</h4>
+                            <ul class="space-y-2">
+                                <li><a href="https://www.whocaresscotland.org/resources-learning/" target="_blank" rel="noopener" class="text-sky-600 hover:underline">Who Cares? Scotland Resources</a> – Training and support for professionals</li>
+                                <li><a href="https://thepromise.scot/" target="_blank" rel="noopener" class="text-sky-600 hover:underline">The Promise Scotland</a> – Plan and resources for keeping the promise</li>
+                                <li><a href="https://enquire.org.uk/professionals/understanding-asl/care-experienced-learners-rights/" target="_blank" rel="noopener" class="text-sky-600 hover:underline">Care Experienced Learners' Rights (Enquire)</a> – Rights and support in education</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ACEs and Nurture -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                <button class="asn-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-slate-50 transition" data-target="aces">
+                    <span class="font-semibold text-slate-800">ACEs and Nurture</span>
+                    <svg class="asn-icon w-5 h-5 text-slate-500 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div id="aces" class="asn-content hidden px-6 pb-6 border-t border-slate-100">
+                    <div class="pt-4 space-y-4 text-slate-600">
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Overview</h4>
+                            <p>Adverse Childhood Experiences (ACEs) are potentially traumatic events in childhood (e.g. abuse, neglect, household dysfunction). They can affect brain development, behaviour, and learning. Nurture approaches focus on building secure relationships and a supportive environment. Trauma-informed practice helps staff understand behaviour as communication and respond in ways that support regulation and belonging.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">In the classroom</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>May be hypervigilant or easily triggered</li>
+                                <li>Can struggle with emotional regulation (fight, flight, freeze)</li>
+                                <li>May find it hard to trust adults or form relationships</li>
+                                <li>Concentration and memory can be affected</li>
+                                <li>Behaviour may seem unpredictable or disproportionate</li>
+                                <li>May avoid certain situations that feel unsafe</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Suggested strategies</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Prioritise relationships; be predictable, calm, and consistent</li>
+                                <li>Use a nurturing, trauma-informed lens when interpreting behaviour</li>
+                                <li>Create a safe, low-stress environment; reduce surprises</li>
+                                <li>Offer co-regulation (calm presence, not punitive reactions)</li>
+                                <li>Give choice and control where possible</li>
+                                <li>Know your school’s nurture and trauma-informed approaches</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Further reading and CPD</h4>
+                            <ul class="space-y-2">
+                                <li><a href="https://publichealthscotland.scot/population-health/early-years-and-young-people/adverse-childhood-experiences-aces/national-action/" target="_blank" rel="noopener" class="text-sky-600 hover:underline">ACEs National Action (Public Health Scotland)</a> – National approach and evidence</li>
+                                <li><a href="https://www.scottishconflictresolution.org.uk/learning-zone-aces-and-trauma" target="_blank" rel="noopener" class="text-sky-600 hover:underline">ACEs and Trauma (SCCR)</a> – Free learning on ACEs, trauma, and the brain</li>
+                                <li><a href="https://www.alliance-scotland.org.uk/" target="_blank" rel="noopener" class="text-sky-600 hover:underline">Health and Social Care Alliance Scotland</a> – Lived experience and self-management</li>
+                                <li><a href="https://education.gov.scot/resources/nurture-and-trauma-informed-approaches/" target="_blank" rel="noopener" class="text-sky-600 hover:underline">Nurture and Trauma-Informed Approaches (Education Scotland)</a> – Summary of supports</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reading / Writing Support -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                <button class="asn-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-slate-50 transition" data-target="literacy">
+                    <span class="font-semibold text-slate-800">Reading and Writing Support</span>
+                    <svg class="asn-icon w-5 h-5 text-slate-500 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div id="literacy" class="asn-content hidden px-6 pb-6 border-t border-slate-100">
+                    <div class="pt-4 space-y-4 text-slate-600">
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Overview</h4>
+                            <p>Some learners need support with literacy for reasons including dyslexia, language difficulties, or other barriers. Assistive technology (text-to-speech, speech-to-text, word prediction) can help. CALL Scotland provides assessment, advice, and resources for pupils with additional support needs who need technology to access learning.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">In the classroom</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Struggle to decode text or read fluently</li>
+                                <li>Difficulty with spelling, grammar, or organising writing</li>
+                                <li>May avoid reading or writing tasks</li>
+                                <li>Could benefit from accessible formats (e.g. audio, larger text)</li>
+                                <li>May have ideas but find it hard to get them down on paper</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Suggested strategies</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Use assistive technology consistently; ensure it works in class and exams</li>
+                                <li>Provide materials in accessible formats where needed</li>
+                                <li>Allow alternatives to writing (e.g. verbal, mind maps, ICT)</li>
+                                <li>Break writing into planning, drafting, editing stages</li>
+                                <li>Use scaffolded tasks and word banks</li>
+                                <li>Contact CALL Scotland for free advice on individual learners</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Further reading and CPD</h4>
+                            <ul class="space-y-2">
+                                <li><a href="https://www.callscotland.org.uk/about/assessment-and-support/" target="_blank" rel="noopener" class="text-sky-600 hover:underline">CALL Scotland Assessment and Support</a> – Pupil assessment and assistive technology</li>
+                                <li><a href="https://www.callscotland.org.uk/downloads/" target="_blank" rel="noopener" class="text-sky-600 hover:underline">CALL Scotland Downloads</a> – Free resources, MyStudyBar, and more</li>
+                                <li><a href="https://www.callscotland.org.uk/information/communication-and-literacy/" target="_blank" rel="noopener" class="text-sky-600 hover:underline">CALL Scotland Communication and Literacy</a> – Information and guidance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Young Carers -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                <button class="asn-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-slate-50 transition" data-target="youngcarers">
+                    <span class="font-semibold text-slate-800">Young Carers</span>
+                    <svg class="asn-icon w-5 h-5 text-slate-500 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div id="youngcarers" class="asn-content hidden px-6 pb-6 border-t border-slate-100">
+                    <div class="pt-4 space-y-4 text-slate-600">
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Overview</h4>
+                            <p>Young carers are under 18 (or 18 and still at school) and help look after someone who is ill, disabled, or misuses drugs or alcohol. Around 7% of young people in Scotland are young carers, often hidden. They may have less time for homework, feel tired, or miss out on social activities. Schools can help by identifying them and offering flexible, practical support.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">In the classroom</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>May be tired, late, or absent</li>
+                                <li>Homework may be incomplete or rushed</li>
+                                <li>Can be distracted (e.g. checking phone about person they care for)</li>
+                                <li>May be quiet, withdrawn, or reluctant to discuss home</li>
+                                <li>Might miss parents’ evenings or after-school activities</li>
+                                <li>May not identify as a young carer</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Suggested strategies</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Have a Young Carers Champion and promote awareness</li>
+                                <li>Record young carers on SEEMiS so support is consistent</li>
+                                <li>Be flexible with homework and deadlines when appropriate</li>
+                                <li>Link with local young carers services</li>
+                                <li>Use inclusive language (e.g. "someone at home" not always "parents")</li>
+                                <li>Offer a trusted adult and a quiet space if needed</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Further reading and CPD</h4>
+                            <ul class="space-y-2">
+                                <li><a href="https://education.gov.scot/resources/supporting-young-carers-in-education/" target="_blank" rel="noopener" class="text-sky-600 hover:underline">Supporting Young Carers in Education (Education Scotland)</a> – Full resource and PL modules</li>
+                                <li><a href="https://carers.org/getting-support-if-you-are-a-young-carer-or-young-adult-carer/getting-support-if-you-are-a-young-carer-or-young-adult-carer" target="_blank" rel="noopener" class="text-sky-600 hover:underline">Carers Trust: Young Carer Support</a> – Information and signposting</li>
+                                <li><a href="https://youngcarersinschools.com/young-carers-challenge-scotland/" target="_blank" rel="noopener" class="text-sky-600 hover:underline">Young Carers in Schools Challenge Scotland</a> – Charter, training, and resources</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Poverty -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                <button class="asn-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-slate-50 transition" data-target="poverty">
+                    <span class="font-semibold text-slate-800">Poverty</span>
+                    <svg class="asn-icon w-5 h-5 text-slate-500 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div id="poverty" class="asn-content hidden px-6 pb-6 border-t border-slate-100">
+                    <div class="pt-4 space-y-4 text-slate-600">
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Overview</h4>
+                            <p>Poverty affects many learners in Scottish schools. It can impact attendance, attainment, health, and wellbeing. The Scottish Attainment Challenge and Pupil Equity Funding aim to close the poverty-related attainment gap. A rights-based, inclusive approach helps ensure all learners can participate and achieve. Cost of living pressures add to existing challenges for many families.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">In the classroom</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>May lack resources (equipment, uniform, money for trips)</li>
+                                <li>Homework support at home may be limited</li>
+                                <li>Attendance can be affected by health, transport, or family circumstances</li>
+                                <li>May experience stigma or feel different from peers</li>
+                                <li>Stress at home can affect concentration and behaviour</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Suggested strategies</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Avoid assumptions; poverty is often hidden</li>
+                                <li>Reduce costs (e.g. free or low-cost trips, no-cost homework)</li>
+                                <li>Provide resources in school where possible</li>
+                                <li>Use a nurturing, non-stigmatising approach</li>
+                                <li>Support aspirations and positive destinations</li>
+                                <li>Work with your school’s equity and attainment lead</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Further reading and CPD</h4>
+                            <ul class="space-y-2">
+                                <li><a href="https://education.gov.scot/learning-in-scotland/scottish-attainment-challenge/evidence-and-insights-on-the-poverty-related-attainment-gap-a-presentation/" target="_blank" rel="noopener" class="text-sky-600 hover:underline">Poverty-Related Attainment Gap (Education Scotland)</a> – Evidence and insights</li>
+                                <li><a href="https://issuetoaction-climateanxiety.my.canva.site/issuetoaction-costofliving" target="_blank" rel="noopener" class="text-sky-600 hover:underline">Issue to Action: Cost of Living</a> – PL resource on cost of living and learners</li>
+                                <li><a href="https://education.gov.scot/learning-in-scotland/scottish-attainment-challenge/scotlands-equity-toolkit/" target="_blank" rel="noopener" class="text-sky-600 hover:underline">Scotland's Equity Toolkit</a> – Evidence and practice for equity</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social, Emotional and Behavioural Needs -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                <button class="asn-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-slate-50 transition" data-target="sebn">
+                    <span class="font-semibold text-slate-800">Social, Emotional and Behavioural Needs</span>
+                    <svg class="asn-icon w-5 h-5 text-slate-500 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div id="sebn" class="asn-content hidden px-6 pb-6 border-t border-slate-100">
+                    <div class="pt-4 space-y-4 text-slate-600">
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Overview</h4>
+                            <p>Social, emotional and behavioural needs (SEBN) can affect how learners manage emotions, build relationships, and behave. Underlying causes may include trauma, ADHD, anxiety, or unmet needs. A relational, restorative approach focuses on understanding behaviour and building skills, rather than punishment. Whole-school ethos and consistent practice matter.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">In the classroom</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Difficulty regulating emotions; may escalate quickly</li>
+                                <li>Struggle with friendships or conflict resolution</li>
+                                <li>May resist or avoid tasks; appear defiant</li>
+                                <li>Can be withdrawn or isolated</li>
+                                <li>Behaviour may be a response to stress or unmet need</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Suggested strategies</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Use restorative approaches; focus on repair, not blame</li>
+                                <li>Teach and model emotional literacy and regulation</li>
+                                <li>Build positive relationships; be predictable and fair</li>
+                                <li>Understand triggers; adapt the environment where possible</li>
+                                <li>Use de-escalation; give time and space to regulate</li>
+                                <li>Work with families and support services</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Further reading and CPD</h4>
+                            <ul class="space-y-2">
+                                <li><a href="https://education.gov.scot/resources/emotions-and-the-brain/" target="_blank" rel="noopener" class="text-sky-600 hover:underline">Emotions and the Brain (Education Scotland)</a> – SCCR resources for practitioners</li>
+                                <li><a href="https://education.gov.scot/resources/improving-relationships-and-behaviour/relationships-and-behaviour-professional-learning/" target="_blank" rel="noopener" class="text-sky-600 hover:underline">Relationships and Behaviour PL (Education Scotland)</a> – Restorative, trauma-informed, and more</li>
+                                <li><a href="https://www.scottishconflictresolution.org.uk/" target="_blank" rel="noopener" class="text-sky-600 hover:underline">Scottish Centre for Conflict Resolution</a> – Free training and resources</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Speech and Language -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                <button class="asn-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-slate-50 transition" data-target="speech">
+                    <span class="font-semibold text-slate-800">Speech and Language</span>
+                    <svg class="asn-icon w-5 h-5 text-slate-500 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div id="speech" class="asn-content hidden px-6 pb-6 border-t border-slate-100">
+                    <div class="pt-4 space-y-4 text-slate-600">
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Overview</h4>
+                            <p>Speech, language and communication needs (SLCN) can affect how learners understand and use language. This can impact learning, behaviour, and relationships. Some need support with understanding (receptive), others with expressing themselves (expressive). Early identification and support matter. Speech and language therapy services work with schools to provide advice and programmes.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">In the classroom</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>May struggle to follow instructions or answer questions</li>
+                                <li>Limited vocabulary or difficulty finding words</li>
+                                <li>May avoid speaking or contributing in class</li>
+                                <li>Difficulty with conversation, turn-taking, or social language</li>
+                                <li>May need visual support or simplified language</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Suggested strategies</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Use clear, simple language; check understanding</li>
+                                <li>Pair spoken instruction with visuals</li>
+                                <li>Give thinking time; avoid putting on the spot</li>
+                                <li>Use visual timetables, word banks, and sentence starters</li>
+                                <li>Follow SLT advice and programmes where in place</li>
+                                <li>CALL Scotland can advise on augmentative communication</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Further reading and CPD</h4>
+                            <ul class="space-y-2">
+                                <li><a href="https://speechandlanguage.org.uk/educators-and-professionals/resource-library-for-educators/" target="_blank" rel="noopener" class="text-sky-600 hover:underline">Speech and Language UK Resource Library</a> – Resources for educators</li>
+                                <li><a href="https://www.stokespeaks.org/resources-and-downloads" target="_blank" rel="noopener" class="text-sky-600 hover:underline">Stoke Speaks Out Resources</a> – Communication development tools</li>
+                                <li><a href="https://www.callscotland.org.uk/" target="_blank" rel="noopener" class="text-sky-600 hover:underline">CALL Scotland</a> – Assistive tech and AAC for communication</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- English as an Additional Language -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                <button class="asn-toggle w-full px-6 py-4 text-left flex justify-between items-center hover:bg-slate-50 transition" data-target="eal">
+                    <span class="font-semibold text-slate-800">English as an Additional Language</span>
+                    <svg class="asn-icon w-5 h-5 text-slate-500 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div id="eal" class="asn-content hidden px-6 pb-6 border-t border-slate-100">
+                    <div class="pt-4 space-y-4 text-slate-600">
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Overview</h4>
+                            <p>Learners with English as an additional language (EAL) speak another language at home. Bilingualism is a strength. They may need support to develop academic English while continuing to use their home language. Progress varies; some are new to English, others are fluent in conversation but need support with curriculum vocabulary and writing.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">In the classroom</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>May be quiet initially while acquiring English</li>
+                                <li>Can understand more than they can produce (receptive before expressive)</li>
+                                <li>May need support with subject-specific vocabulary</li>
+                                <li>Cultural references and idioms may be unfamiliar</li>
+                                <li>May have strong skills in their home language</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Suggested strategies</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Value and use home languages; bilingual resources help</li>
+                                <li>Use visuals, real objects, and gestures to support meaning</li>
+                                <li>Pre-teach key vocabulary; use word banks and glossaries</li>
+                                <li>Pair with supportive peers; allow collaborative talk</li>
+                                <li>Give extra time and scaffolding for written tasks</li>
+                                <li>Avoid assuming low ability; it may be language, not cognition</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-800 mb-2">Further reading and CPD</h4>
+                            <ul class="space-y-2">
+                                <li><a href="https://education.gov.scot/parentzone/additional-support/specific-support-needs/learning-environment/english-as-an-additional-language/" target="_blank" rel="noopener" class="text-sky-600 hover:underline">EAL (Education Scotland Parentzone)</a> – Information and guidance</li>
+                                <li><a href="https://www.sateal.org.uk/about-us/" target="_blank" rel="noopener" class="text-sky-600 hover:underline">SATEAL</a> – Scottish Association for Teaching EAL; conference and network</li>
+                                <li><a href="https://www.bell-foundation.org.uk/resources/teaching-resources/" target="_blank" rel="noopener" class="text-sky-600 hover:underline">Bell Foundation Teaching Resources</a> – EAL pedagogy and resources</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('.asn-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const target = button.getAttribute('data-target');
+                const content = document.getElementById(target);
+                const icon = button.querySelector('.asn-icon');
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-400 py-12 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <img src="sid-logo.png" alt="SID Logo" class="h-12 mx-auto mb-4">
+            <p class="mb-4">Staged Intervention Database</p>
+            <p class="text-sm">Built by educators, for educators.</p>
+        </div>
+    </footer>
+</body>
+</html>
